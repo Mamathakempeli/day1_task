@@ -1,0 +1,73 @@
+2.Write a blog about objects and its internal representation in Javascript
+Ans:
+
+Objects and Their Internal Representation in JavaScript:
+=========================================================
+JavaScript, as a versatile and widely used programming language, relies heavily on objects. Objects serve as the building blocks for modern JavaScript applications,
+allowing developers to create complex data structures and organize related data. In this blog, we’ll explore what objects are, their internal representation, and how they differ from primitive data types.
+
+Understanding Objects
+======================
+1.What Are Objects?
+-------------------
+In JavaScript, an object is a reference data type.
+Unlike primitive data types (such as numbers, strings, and booleans), which store a single value each, objects can hold a combination of primitive data types and reference data types.
+Objects are unordered collections of related data, represented as “key: value” pairs.
+Keys (also known as properties) can be variables or functions, while values can be any data type.
+
+2.Creating Objects
+------------------
+You can create an object using either the new Object() constructor or object literal notation ({}).
+For example:
+JavaScript
+
+// Using object literal notation
+const myCar = {
+  make: 'Ford',
+  model: 'Mustang',
+  year: 1969
+};
+
+3.Properties and Methods
+----------------------
+An object has properties associated with it.
+Properties are essentially variables attached to the object.
+You can access properties using dot notation (objectName.propertyName) or bracket notation (objectName['propertyName']).
+Example:
+JavaScript
+
+console.log(myCar.make); // Output: Ford
+
+4.Internal Representation of Objects
+-------------------------------------
+Internally, objects are stored as a collection of key-value pairs.
+Each key (property name) maps to a value (either data or references to functions).
+When you access an object’s property or method, JavaScript searches for the property name in the object’s internal collection of key-value pairs.
+
+
+Key Concepts
+==============
+1.Data Properties vs. Accessor Properties
+-------------------------------------------
+Objects have two types of properties:
+Data properties: Contain a value (e.g., myCar.make).
+Accessor properties: Contain getter and setter functions (e.g., myCar.getColor()).
+These properties define the characteristics of the object.
+
+2.Header Compression
+--------------------
+HTTP/2 uses header compression (HPACK) to optimize the representation of object properties.
+Header fields are encoded and transmitted efficiently, reducing overhead.
+
+3.Server Push
+--------------
+HTTP/2 introduces server push, allowing the server to proactively send additional resources to the client.
+For example, pushing CSS files or images that the client will likely need.
+
+Conclusion
+===========
+Understanding how objects are internally represented in JavaScript is essential for efficient coding and optimizing performance. Objects provide a powerful way to organize and manipulate data, making them a fundamental part of modern web development.
+
+Remember that objects are not just data containers; they encapsulate behavior (methods) as well. As you continue your JavaScript journey, explore objects further and leverage their flexibility to build robust applications.
+
+In summary, objects in JavaScript are versatile data structures that store related data as key-value pairs. Their internal representation involves efficient storage and retrieval of properties. By mastering objects, you’ll unlock the full potential of JavaScript development.

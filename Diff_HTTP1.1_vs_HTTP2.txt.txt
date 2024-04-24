@@ -1,0 +1,72 @@
+Q1.Write a blog on Difference between HTTP1.1 vs HTTP2
+Ans:
+HTTP1.1:
+========
+The first usable version of HTTP was created in 1997. Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. 
+This version is still in use on the web.
+
+HTTP2:
+=========
+In 2015, a new version of HTTP called HTTP/2 was created. HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate.
+In particular, HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+
+
+Difference between HTTP/1.1 and HTTP/2
+=======================================
+The Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web. Since its inception in 1989, HTTP has undergone several revisions to improve performance, security, and efficiency. Two significant versions of HTTP are HTTP/1.1 and HTTP/2. In this blog, we’ll explore the differences between these two protocols.
+
+Background
+Before diving into the specifics, let’s briefly understand the historical context and basic workings of each protocol:
+
+HTTP/1.1
+--------
+Developed by Timothy Berners-Lee in 1989, HTTP/1.1 has been the de facto standard for web communication.
+It uses plain text for all requests and responses.
+Each request-response cycle involves opening a new TCP connection, which can lead to latency.
+Resources (HTML pages, images, stylesheets, etc.) are loaded sequentially, blocking subsequent requests until the current one completes.
+Header fields are verbose and redundant, leading to increased overhead.
+
+HTTP/2
+-------
+In 2015, HTTP/2 was introduced as a reimagined version of HTTP.
+It aimed to address the limitations of HTTP/1.1, especially when dealing with mobile platforms and server-intensive graphics and videos.
+HTTP/2 has become increasingly popular, with around a third of all websites worldwide supporting it.
+
+Technical Differences
+======================
+Now let’s delve into the technical changes that HTTP/2 adopted to achieve a more efficient web protocol:
+
+1.Binary Framing Layer:
+-----------------------
+HTTP/2 uses a binary framing layer instead of plain text for all messages.
+Each message is encapsulated in binary format while still maintaining HTTP semantics (verbs, methods, headers).
+This binary framing reduces parsing complexity and improves efficiency.
+
+2.Multiplexing:
+----------------
+HTTP/2 is fully multiplexed, allowing multiple requests and responses to be interleaved over a single TCP connection.
+Unlike HTTP/1.1, which uses separate connections for each resource, HTTP/2 avoids network delay by using multiplexing.
+This significantly reduces latency, especially for mobile devices.
+
+3.Header Compression
+------------------
+HTTP/2 uses HPACK for header compression.
+Header fields are encoded and transmitted more efficiently, reducing overhead.
+This optimization is crucial for improving performance, especially when dealing with large numbers of resources.
+
+4.Server Push:
+------------
+HTTP/2 introduces server push, allowing the server to proactively send additional resources to the client.
+For example, the server can push CSS files or images that the client will likely need.
+This reduces the need for subsequent requests, improving page load times.
+
+
+Conclusion
+===========
+HTTP/2 represents a significant leap forward in web communication. Its binary framing, multiplexing, header compression, and server push contribute to faster, more efficient web experiences. As web developers, understanding these differences empowers us to make informed decisions and adopt best practices for evolving web standards.
+
+Remember that HTTP/2 is backward-compatible with HTTP/1.1, so existing websites can benefit from its features without major changes.
+
+In summary, HTTP/2 is not just an incremental improvement; it’s a fundamental shift toward a more efficient and responsive web.
+
+I hope you found this blog informative! If you have any questions or want to explore further, feel free to reach out. Happy coding!
